@@ -1,0 +1,44 @@
+@import"../../assets/color.scss";
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background: linear-gradient(to right, $green, $yellow);
+}
+
+.logo {
+    margin-top: 5px;
+    padding: 5px;
+    float: left;
+    width: 45px;
+}
+
+.menu {
+    margin-top: 5px;
+    padding: 10px;
+    width: 45px;
+    float: right;
+}
+
+.profile {
+    margin-top: 5px;
+    padding: 10px;
+    width: 45px;
+    float: right;
+}
+
+.titleBar{
+    padding: 10px;
+    background:$lightGrey;
+    p{
+        margin-left: 15%;
+        line-height: 1.5;
+        color: $grey;
+    }
+    h3{
+        margin-left: 15%;
+        line-height: 1.5;
+    }
+}

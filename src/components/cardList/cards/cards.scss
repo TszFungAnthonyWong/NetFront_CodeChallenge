@@ -1,0 +1,63 @@
+@import "../../../assets/color.scss";
+
+.card {
+  width: 25%;
+  display: inline-block;
+  margin: 20px;
+  margin-left: 20px;
+  border-radius: 15px;
+  border: 1px solid$lightGrey;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.cardImg {
+  width: 100%;
+  height: 200px;
+  border: 65px solid$lightGrey;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  object-fit: fill;
+  display: block;
+  background: $lightGrey;
+}
+
+.publish {
+  transform: translate(15%, -620%);
+  position: absolute;
+  padding: 15px 8px;
+  height: 10px;
+  background-color: $green;
+  color: white;
+  border-radius: 15px;
+  p {
+    transform: translate(0%, -35%);
+  }
+}
+
+.card-content {
+  margin: 10px;
+  line-height: 1.5;
+}
+
+.user{
+    color: $grey;
+    
+}
+
+.rating {
+  margin-left: -5px;
+  p {
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 6px;
+    
+  }
+}
+
+.starImg {
+  width: 15px;
+  margin-left: 5px;
+  display: inline-block;
+}

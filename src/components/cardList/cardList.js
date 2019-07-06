@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Card from "./cards/cards";
+import "./cardList.scss";
 
 class CardList extends Component {
     render() {
@@ -7,9 +8,14 @@ class CardList extends Component {
             return <Card data={this.props.data.cards[key]} key={key} />
         })
         return (
-            <div className="card-wrapper">
-                {cardList}
-            </div>
+            <section>
+                <div className="card-wrapper">
+                    {cardList}
+                </div>
+
+                
+            </section>
+
         )
     }
 }
