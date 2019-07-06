@@ -12,8 +12,6 @@ class CardList extends Component {
                 <div className="card-wrapper">
                     {cardList}
                 </div>
-
-                
             </section>
 
         )

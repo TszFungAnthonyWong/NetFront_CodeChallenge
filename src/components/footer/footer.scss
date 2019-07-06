@@ -1,14 +1,41 @@
-@import"../../assets/color.scss";
+@import "../../assets/color.scss";
 
 .footer {
-    margin-top: 5%;
-    left: 0;
-    bottom: 0;
-    padding: 10px;
-    width: 100%;
-    background: $grey;
-    color: white;
-    text-align: center;
- }
+    line-height: 2;
+  margin-top: 5%;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  background: $grey;
+  color: white;
+  text-align: center;
+}
 
+.totop{
+  width: 80px;
+  display: none;
+}
 
+@media only screen and (min-width: 1000px) {
+  .footer {
+    padding: 20px;
+  }
+  .company {
+    margin-top: -7px;
+    float: left;
+  }
+  .privacy {
+    margin-top: -7px;
+    float: right;
+  }
+}
+
+@media (max-width: 600px) {
+  .totop{
+    bottom: 30pt;
+    right: 0;
+    position: fixed;
+    display: block;
+  }
+}

@@ -10,7 +10,7 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <CardList data = {data}/>
-        <Footer></Footer>
+        <Footer />
       </div>
     );
   }

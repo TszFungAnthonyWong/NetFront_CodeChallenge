@@ -1,8 +1,14 @@
 .card-wrapper{
     margin-top: 2%;
-    margin-left: 15%;
+    margin-left: 5%;
     display: flex;
     align-items: center;
     align-content: center;
     flex-wrap: wrap
 }
+
+@media only screen and (min-width: 900px) {
+    .card-wrapper{
+        margin-left: 10%;
+    }
+  }

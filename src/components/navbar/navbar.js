@@ -10,8 +10,8 @@ const Navbar = () => {
         <div>
             <ul>
                 <li><img className="logo" src={logo} alt="logo" /></li>
-                <li><img className="menu" src={menu} alt="menu" /></li>
                 <li><img className="profile" src={profile} alt="profile" /></li>
+                <li><img className="menu" src={menu} alt="menu" /></li>
             </ul>
             <div className="titleBar">
                 <p>Dashboard > My apps</p>

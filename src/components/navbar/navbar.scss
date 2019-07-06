@@ -33,12 +33,35 @@ ul {
     padding: 10px;
     background:$lightGrey;
     p{
-        margin-left: 15%;
+        margin-left: 10%;
         line-height: 1.5;
         color: $grey;
     }
     h3{
-        margin-left: 15%;
+        margin-left: 10%;
         line-height: 1.5;
     }
+}
+
+@media only screen and (min-width: 1000px) {
+    .logo {
+        margin-top: 5px;
+        padding: 5px;
+        float: left;
+        width: 35px;
+    }
+    
+    .menu {
+        margin-top: 5px;
+        padding: 7px;
+        width: 35px;
+        float: right;
+    }
+    
+    .profile {
+        margin-top: 5px;
+        padding: 7px;
+        width: 35px;
+    }
+
 }
