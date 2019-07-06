@@ -1,67 +1,86 @@
-@import"../../assets/color.scss";
+@import "../../assets/color.scss";
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-    background: linear-gradient(to right, $green, $yellow);
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background: linear-gradient(to right, $green, $yellow);
 }
 
 .logo {
-    margin-top: 5px;
-    padding: 5px;
-    float: left;
-    width: 45px;
+  margin-top: 5px;
+  padding: 5px;
+  float: left;
+  width: 45px;
 }
 
 .menu {
-    margin-top: 5px;
-    padding: 10px;
-    width: 45px;
-    float: right;
+  margin-top: 5px;
+  padding: 10px;
+  width: 45px;
+  float: right;
 }
 
 .profile {
-    margin-top: 5px;
-    padding: 10px;
-    width: 45px;
-    float: right;
+  margin-top: 5px;
+  padding: 10px;
+  width: 45px;
+  float: right;
 }
 
-.titleBar{
-    padding: 10px;
-    background:$lightGrey;
-    p{
-        margin-left: 10%;
-        line-height: 1.5;
-        color: $grey;
-    }
-    h3{
-        margin-left: 10%;
-        line-height: 1.5;
-    }
+.expand {
+  margin-top: 5px;
+  padding: 7px;
+  width: 35px;
+  float: right;
+  display: none;
+}
+
+.titleBar {
+  padding: 10px;
+  background: $lightGrey;
+  p {
+    margin-left: 10%;
+    line-height: 1.5;
+    color: $grey;
+  }
+  h3 {
+    margin-left: 10%;
+    line-height: 1.5;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-    .logo {
-        margin-top: 5px;
-        padding: 5px;
-        float: left;
-        width: 35px;
-    }
-    
-    .menu {
-        margin-top: 5px;
-        padding: 7px;
-        width: 35px;
-        float: right;
-    }
-    
-    .profile {
-        margin-top: 5px;
-        padding: 7px;
-        width: 35px;
-    }
+  .logo {
+    margin-top: 5px;
+    padding: 5px;
+    float: left;
+    width: 35px;
+  }
 
+  .menu {
+    margin-top: 5px;
+    padding: 7px;
+    width: 35px;
+    float: right;
+  }
+
+  .profile {
+    margin-top: 5px;
+    padding: 7px;
+    width: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .expand {
+    display: block;
+  }
 }

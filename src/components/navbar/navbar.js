@@ -4,14 +4,17 @@ import "./navbar.scss";
 import logo from "../../assets/logo.svg"
 import menu from "../../assets/menu-dash.svg"
 import profile from "../../assets/profile.svg"
+import expand from "../../assets/expand-button.svg"
 
 const Navbar = () => {
     return (
         <div>
             <ul>
+                
                 <li><img className="logo" src={logo} alt="logo" /></li>
                 <li><img className="profile" src={profile} alt="profile" /></li>
                 <li><img className="menu" src={menu} alt="menu" /></li>
+                <li><img className="expand" src={expand} alt="expand" /></li>
             </ul>
             <div className="titleBar">
                 <p>Dashboard > My apps</p>

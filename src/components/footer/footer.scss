@@ -1,7 +1,7 @@
 @import "../../assets/color.scss";
 
 .footer {
-    line-height: 2;
+  line-height: 2;
   margin-top: 5%;
   left: 0;
   bottom: 0;
@@ -12,9 +12,11 @@
   text-align: center;
 }
 
-.totop{
-  width: 80px;
+.totop {
   display: none;
+  img {
+    width: 80px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -32,10 +34,13 @@
 }
 
 @media (max-width: 600px) {
-  .totop{
+  .totop {
     bottom: 30pt;
     right: 0;
     position: fixed;
     display: block;
+    &:hover{
+      transform: scale(1.1);
+    }
   }
 }
