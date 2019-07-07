@@ -37,6 +37,26 @@ ul {
   display: none;
 }
 
+.expandPad {
+  opacity: 0.5;
+  display: none;
+  z-index: 100;
+  position: absolute;
+  padding: 10px;
+  padding-right: 200px;
+  border: 1px solid $grey;
+  background: $grey;
+  color: white;
+  right: 0;
+  transform: translate(0%, -103%);
+  line-height: 1.6;
+  p{
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+
 .titleBar {
   padding: 10px;
   background: $lightGrey;
@@ -82,5 +102,8 @@ ul {
   }
   .expand {
     display: block;
+  }
+  .expandPad {
+    display: inline;
   }
 }

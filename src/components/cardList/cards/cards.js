@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 import imgSvg from "../../../assets/image-placement.svg";
 import gold_starSvg from "../../../assets/single-star-gold.svg"
 import gery_starSvg from "../../../assets/single-star-grey.svg"
@@ -47,5 +48,9 @@ class Card extends Component {
         );
     }
 }
+
+Card.propTypes = {
+    data: PropTypes.object
+};
 
 export default Card

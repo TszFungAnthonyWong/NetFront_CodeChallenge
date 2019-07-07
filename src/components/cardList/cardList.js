@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 import Card from "./cards/cards";
 import "./cardList.scss";
 
@@ -17,5 +18,9 @@ class CardList extends Component {
         )
     }
 }
+
+CardList.propTypes = {
+    data: PropTypes.object
+};
 
 export default CardList
